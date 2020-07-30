@@ -8,13 +8,13 @@ class App extends Component {
 		username: 'Colbol',
 	};
 
-	handleInputChange() {}
+	handleInputChange = event => {}
 
 	render() {
 		return (
 			<div className='App'>
 				<h1>Hi, I'm a React App!</h1>
-				<UserInput />
+				<UserInput change={this.handleInputChange}/>
 				<UserOutput
 					username={this.state.username}
 					text='I am the text of the first UserOutput.'
